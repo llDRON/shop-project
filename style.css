@@ -101,18 +101,27 @@ body{
     top: 5px;
     right: 5px;
 }
-/* .products-drop-list li {
+.products-drop-list {
     display: none;
-    border: none;
-    width: 285px;
-    background-color: #2c71b8;
+    position: absolute;
+    left: 625.5px;
+}
+.products-drop-list li{
+    float: none;
+}
+li:hover > ul{
+    display: block;
 }
 .products-drop-content a{
-    color: white;
+    background-color: #2c71b8;
     display: block;
+    color: white;
+    width: 285px;
+    height: 40px;
+    text-align: left;
+    padding-left: 25px;
 }
 .products-drop-content a:hover{
-    display: block;
     background-color: white;
     color: #2c71b8;
-} */
+}
