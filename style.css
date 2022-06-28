@@ -36,6 +36,9 @@ body{
 .col-md-9{
     width: 75%;
 }
+.col-md-12{
+    width: 100%;
+}
 .header{
     padding: 25px 0;
     background-color: rgba(255, 255, 255, 0.75);
@@ -133,7 +136,7 @@ body{
     border: none;
     position: absolute;
     top: 31px;
-    left: 1248px;
+    left: 1240px;
     margin-top: 4px;
     margin-right: 4px;
 
@@ -158,14 +161,14 @@ body{
     border-radius: 100%;
     position: absolute;
     top: 20px;
-    left: 84.5%;
+    left: 84.8%;
 }
 /* Products drop list */
 
 .products-drop-list {
     display: none;
     position: absolute;
-    left: 625.5px;
+    left: 618px;
 }
 .products-drop-list li{
     float: none;
@@ -185,4 +188,34 @@ li:hover > ul{
 .products-drop-content a:hover{
     background-color: white;
     color: #2c71b8;
+}
+
+/* Slider */
+
+.slider{
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.75);
+}
+/* Sidebar */
+
+.sidebar{
+    height: 843px;
+    background-color: rgba(255, 255, 255, 0.20);
+}
+.ref{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    margin: 30px 0px;
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+#sort{
+    background-color: transparent;
+    color: white;
 }
