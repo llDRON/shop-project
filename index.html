@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop project</title>
+    <title>Shop2</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 <body>
-    
     <header class="header">
         <div class="container">
             <div class="row">
@@ -23,65 +23,78 @@
                 </div>
                 <div class="col-md-6">
                     <nav>
-                    <ul class="menu">
-                        <li><a href="">Home</a></li>
-                        <li class="products"><a href="">Products
+                        <ul class="menu">
+                           <li><a href="">Home</a></li>
+                           <li class="products"><a href="">Products
                             <span class="material-symbols-outlined">
-                            expand_more
-                            </span></a>
-                            <ul class="products-drop-list">
-                                <li class="products-drop-content"><a href="">Lorem, ipsum dolor.</a></li>
-                                <li class="products-drop-content"><a href="">Lorem, ipsum.</a></li>
-                                <li class="products-drop-content"><a href="">Lorem ipsum dolor.</a></li>
-                                <li class="products-drop-content"><a href="">Lorem.</a></li>
-                                <li class="products-drop-content"><a href="">Lorem, ipsum.</a></li>
-                            </ul>    
-                        </li>
-                        <li><a href="">Payment</a></li>
-                        <li><a href="">Shipping</a></li>
-                    </ul>
+                                expand_more
+                                </span>
+                           </a>
+                                <ul class="products-drop-list">
+                                    <li class="products-drop-content"><a href="">Lorem</a></li>
+                                    <li class="products-drop-content"><a href="">Lorem</a></li>
+                                    <li class="products-drop-content"><a href="">Lorem</a></li>
+                                    <li class="products-drop-content"><a href="">Lorem</a></li>
+                                </ul>
+                            </li>
+                           <li><a href="">Payment</a></li>
+                           <li><a href="">Shipping</a></li>
+                        </ul>
                     </nav>
                 </div>
                 <div class="col-md-3">
                     <div class="row">
                         <div class="col-md-9">
-                            <form action="">
-                                <input type="text" class="header-form-search">
-                                <input type="search" class="search-input" placeholder="search">
+                            <form action="" class="header-form-search">
+                                <input type="text" placeholder="search">
                                 <button class="btn-search"></button>
                             </form>
                         </div>
                         <div class="col-md-3">
-                            <div class="header-cart"></div>
-                            <div class="products-count">0</div>
+                            <form action="" class="header-form-cart">
+                             <button class="btn-cart"></button>
+                                <div class="products-count">0</div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    
     <main class="main">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="slider">Slider</div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-md-3">
-                    <div class="sidebar">Sidebar</div>
+                    <div class="filter"></div>
                 </div>
-                <div class="col-md-6">
-                    <div class="ref">
-                        Home page  >  Products  >  Laptops and Tablets
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="breadcrumbs">
+                                <span><a href="">Home page ></a></span>
+                                <span><a href="">Products ></a></span>
+                                <span class="Laptops"><a  href="">Laptops and Tablets</a></span>
+                            </div>
+                        </div>
                     </div>
-                    <h1>Laptops and Tablets</h1>
-                </div>
-                <div class="col-md-3"> 
-                    <ul class="sort-drop-list">sort by price
-                        <li class="sort-drop-content">sort by name</li>
-                        <li class="sort-drop-content">sort by date</li>
-                        <li class="sort-drop-content">sort by popularity</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h1>Laptops and Tablets</h1>
+                        </div>
+                        <div class="col-md-4">Sort</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="product1">Product1</div>
+                        </div>
+                        <div class="col-md-4">Product</div>
+                        <div class="col-md-4">Product</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,6 +102,5 @@
     <footer class="footer">
         <div class="container">Footer</div>
     </footer>
-    
 </body>
 </html>
