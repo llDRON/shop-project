@@ -73,6 +73,10 @@ body{
     background-color: #2c71b8;
     color: white;
 }
+p.material-symbols-outlined{
+    float: right;
+    margin: 5px;
+}
 .material-symbols-outlined{
     position: relative;
     top: 5px;
@@ -206,38 +210,35 @@ h1{
     margin-bottom: 50px;
 }
 /* Sort */
-
-/* .sort-form ul a{
-    display: block;
-    text-decoration: none;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    color: white;
-    font-size: 21px;
-    padding-left: 15px;
-    width: 270px;
-    line-height: 40px;
-    background-color: #000000;
-
-} */
-
-/* .sort-form ul > a{
-    position: relative;
-} */
-/* .sort-form ul li a{
-    display: block;
-    background-color: red;
+.sort-dropdown{
+    position: absolute;
+    z-index: 10;
+    border: white 1px solid;
 }
-.sort-form a:hover{
+/* .sort > a{
+    border-bottom: white 1px solid;
+} */
+.sort a{
+    padding-left: 15px;
+    text-decoration: none;
+    width: 268px;
+    font-size: 21px;
+    line-height: 40px;
+    color: white;
+    background-color: #2c71b8;
+    display: block;
+}
+.sort a:hover{
     background-color: white;
     color: #2c71b8;
 }
-.sort-form ul{
-    position: absolute;
-} */
 
-
+.sort-drop-content{
+    display: none;
+}
+.sort-dropdown:hover .sort-drop-content{
+    display: block;
+}
 
 
 /* Products */
