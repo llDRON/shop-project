@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop2</title>
+    <title>Shop project</title>
     <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
 
 </head>
 <body>
@@ -53,7 +58,7 @@
                         <div class="col-md-3">
                             <form action="" class="header-form-cart">
                              <button class="btn-cart"></button>
-                                <div class="products-count">0</div>
+                                <div id="products-count" class="products-count">0</div>
                             </form>
                         </div>
                     </div>
@@ -65,7 +70,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="slider">Slider</div>
+                    <div class="slider">
+                        <div class="slider-block">
+                            <div>Slide1</div>
+                            <div>Slide2</div>
+                            <div>Slide3</div>
+                          </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -142,7 +153,7 @@
                                 <div class="product-image">
                                     <img class="device" src="images/Laptop.png" alt="Laptop">
                                     <div class="zoom"></div>
-                                    <div class="like"></div>
+                                    <div class="like liked"></div>
                                 </div>
                                 <div class="product-body">
                                     <div class="product-title">#1 Device name</div>
@@ -155,8 +166,8 @@
                                     <div class="product-price">
                                         $1599 <span class="cents">25</span>
                                     </div>
-                                    <button class="btn">More details</button>
-                                    <button class="btn">Add to cart</button>
+                                    <button class="btn btn-more-details">More details</button>
+                                    <button class="btn add-to-cart-btn">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +176,7 @@
                                 <div class="product-image">
                                     <img class="device" src="images/tv-box.png" alt="Laptop">
                                     <div class="zoom"></div>
-                                    <div class="like"></div>
+                                    <div class="like liked"></div>
                                 </div>
                                 <div class="product-body">
                                     <div class="product-title">#2 Device name</div>
@@ -178,8 +189,8 @@
                                     <div class="product-price">
                                         $99 <span class="cents">99</span>
                                     </div>
-                                    <button class="btn">More details</button>
-                                    <button class="btn">Add to cart</button>
+                                    <button class="btn btn-more-details">More details</button>
+                                    <button class="btn add-to-cart-btn">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +199,7 @@
                                 <div class="product-image">
                                     <img class="device" src="images/tablet.png" alt="Laptop">
                                     <div class="zoom"></div>
-                                    <div class="like"></div>
+                                    <div class="like liked"></div>
                                 </div>
                                 <div class="product-body">
                                     <div class="product-title">#3 Device name</div>
@@ -201,8 +212,8 @@
                                     <div class="product-price">
                                         $150 <span class="cents">00</span>
                                     </div>
-                                    <button class="btn">More details</button>
-                                    <button class="btn">Add to cart</button>
+                                    <button class="btn btn-more-details">More details</button>
+                                    <button class="btn add-to-cart-btn">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -211,7 +222,7 @@
                                 <div class="product-image">
                                     <img class="device" src="images/iphone.png" alt="Laptop">
                                     <div class="zoom"></div>
-                                    <div class="like"></div>
+                                    <div class="like liked"></div>
                                 </div>
                                 <div class="product-body">
                                     <div class="product-title">#4 Device name</div>
@@ -224,8 +235,8 @@
                                     <div class="product-price">
                                         $999 <span class="cents">99</span>
                                     </div>
-                                    <button class="btn">More details</button>
-                                    <button class="btn">Add to cart</button>
+                                    <button class="btn btn-more-details">More details</button>
+                                    <button class="btn add-to-cart-btn">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +245,7 @@
                                 <div class="product-image">
                                     <img class="device" src="images/ipod.png" alt="Laptop">
                                     <div class="zoom"></div>
-                                    <div class="like"></div>
+                                    <div class="like liked"></div>
                                 </div>
                                 <div class="product-body">
                                     <div class="product-title">#5 Device name</div>
@@ -247,8 +258,8 @@
                                     <div class="product-price">
                                         $50 <span class="cents">50</span>
                                     </div>
-                                    <button class="btn">More details</button>
-                                    <button class="btn">Add to cart</button>
+                                    <button class="btn btn-more-details">More details</button>
+                                    <button class="btn add-to-cart-btn">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +268,7 @@
                                 <div class="product-image">
                                     <img class="device" src="images/iwatch.png" alt="Laptop">
                                     <div class="zoom"></div>
-                                    <div class="like"></div>
+                                    <div class="like liked"></div>
                                 </div>
                                 <div class="product-body">
                                     <div class="product-title">#6 Device name</div>
@@ -270,8 +281,8 @@
                                     <div class="product-price">
                                         $200 <span class="cents">00</span>
                                     </div>
-                                    <button class="btn">More details</button>
-                                    <button class="btn">Add to cart</button>
+                                    <button class="btn btn-more-details">More details</button>
+                                    <button class="btn add-to-cart-btn">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -280,7 +291,7 @@
                                 <div class="product-image">
                                     <img class="device" src="images/monitor.png" alt="Laptop">
                                     <div class="zoom"></div>
-                                    <div class="like"></div>
+                                    <div class="like liked"></div>
                                 </div>
                                 <div class="product-body">
                                     <div class="product-title">#7 Device name</div>
@@ -293,8 +304,8 @@
                                     <div class="product-price">
                                         $800 <span class="cents">00</span>
                                     </div>
-                                    <button class="btn">More details</button>
-                                    <button class="btn">Add to cart</button>
+                                    <button class="btn btn-more-details">More details</button>
+                                    <button class="btn add-to-cart-btn">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -303,7 +314,7 @@
                                 <div class="product-image">
                                     <img class="device" src="images/tv-box.png" alt="Laptop">
                                     <div class="zoom"></div>
-                                    <div class="like"></div>
+                                    <div class="like liked"></div>
                                 </div>
                                 <div class="product-body">
                                     <div class="product-title">#8 Device name</div>
@@ -316,8 +327,8 @@
                                     <div class="product-price">
                                         $99 <span class="cents">99</span>
                                     </div>
-                                    <button class="btn">More details</button>
-                                    <button class="btn">Add to cart</button>
+                                    <button class="btn btn-more-details">More details</button>
+                                    <button class="btn add-to-cart-btn">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -326,7 +337,7 @@
                                 <div class="product-image">
                                     <img class="device" src="images/tablet.png" alt="Laptop">
                                     <div class="zoom"></div>
-                                    <div class="like"></div>
+                                    <div class="like liked"></div>
                                 </div>
                                 <div class="product-body">
                                     <div class="product-title">#9 Device name</div>
@@ -339,8 +350,8 @@
                                     <div class="product-price">
                                         $150 <span class="cents">00</span>
                                     </div>
-                                    <button class="btn">More details</button>
-                                    <button class="btn">Add to cart</button>
+                                    <button class="btn btn-more-details">More details</button>
+                                    <button class="btn add-to-cart-btn">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -360,5 +371,29 @@
             <p>© Copyright 2017</p>
         </div>
     </footer>
+
+<div class="modal">
+    <div class="modal-block">
+        <form action="">
+            <div class="btn-close">X</div>
+                <h3 class="form-title">Please call for more details</h3>
+                <div class="form-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <div class="form-button">
+                    <button>Please call</button>
+                </div>
+                
+            
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
