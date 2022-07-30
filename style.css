@@ -179,7 +179,7 @@ li.products:hover > a{
 
 /* Slider */
 .slider{
-    background-color: rgba(255, 255, 255, 0.25);
+    position: relative;
     height: 400px;
     color: white;
     text-align: center;
@@ -187,7 +187,26 @@ li.products:hover > a{
     font-size: 100px;
     padding: 150px 0;
 }
+.slick-prev{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(images/slick-prev.png) !important;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.slick-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(images/slick-next.png) !important;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.slick-prev:before, .slick-next:before{
+    visibility: hidden;
 
+}
 
 .slick-dots li button:before{
     font-size: 0;
@@ -293,8 +312,8 @@ h1{
 /* Sort */
 .sort-dropdown{
     position: absolute;
-    z-index: 10;
     border: white 1px solid;
+    z-index: 1;
 }
 .sort a{
     padding-left: 15px;
@@ -358,21 +377,18 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
     margin: 10px;
-    float: right;
     position: absolute;
     top: 40px;
     right: 0;
 }
-
 .like:hover{
     background-image: url(images/like-w.png);
     background-color: #2c71b8;
 }
 .liked{
-    background-image: url(images/like-w.png);
     background-color: #2c71b8;
+    background-image: url(images/like-w.png);
 }
-
 .product-body{
     padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.75);
@@ -453,6 +469,7 @@ h1{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
+    z-index: 10;
 }
 .modal-block{
     width: 400px;
@@ -461,7 +478,9 @@ h1{
     border: 1px solid grey;
     background-color: rgba(255, 255, 255);
     border-radius: 6px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
     padding: 15px;
+    box-shadow: 20px 10px 5px rgba(0, 0, 0, 0.2);
 }
 .btn-close-container{
     display: flex;
@@ -473,16 +492,26 @@ h1{
     width: 20px;
     text-align: center;
     font-weight: bold;
-    background-color: rgba(255, 0, 0, 0.334);
+    line-height: 20px;
+    border-radius: 4px;
 }
 .form-title, .form-field{
     margin: 15px 0;
+}
+.form-title{
+    text-transform: uppercase;
+    text-align: center;
 }
 .form-field input{
     width: 100%;
     height: 40px;
     padding: 3px;
     font-size: 16px;
+    border-radius: 6px;
+}
+.form-field input::placeholder{
+    padding-left: 10px;
+
 }
 .form-button{
     display: flex;

@@ -14,7 +14,6 @@ for (let i = 0; i < addToCartBtns.length; i++) {
 //  like
 
 let likeBtns = document.querySelectorAll(".like");
-// console.log(likeBtns);
 
 likeBtns.forEach((item) =>
   item.addEventListener("click", function () {
