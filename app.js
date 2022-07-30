@@ -47,4 +47,6 @@ btnClose.addEventListener("click", closeModal);
 
 // slider
 
-$(".slider-block").slick;
+$(".slider").slick({
+  dots: true,
+});
