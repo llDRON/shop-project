@@ -49,3 +49,11 @@ btnClose.addEventListener("click", closeModal);
 $(".slider").slick({
   dots: true,
 });
+
+// modal scroll
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= document.body.scrollHeight / 2) {
+    $(".modal").addClass("show");
+  }
+});
