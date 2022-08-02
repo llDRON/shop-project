@@ -50,10 +50,50 @@ $(".slider").slick({
   dots: true,
 });
 
-// modal scroll
+// $(window).scroll(function () {
+//   if ($(this).scrollTop() >= document.body.scrollHeight / 2) {
+//     $(".modal").addClass("show");
+//   }
+// });
 
-$(window).scroll(function () {
-  if ($(this).scrollTop() >= document.body.scrollHeight / 2) {
-    $(".modal").addClass("show");
+// close modal
+
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) {
+    closeModal();
   }
 });
+
+// show modal by scroll
+
+function showModalByScroll() {
+  if (window.pageYOffset > document.body.scrollHeight / 2) {
+    openModal();
+    window.removeEventListener("scroll", showModalByScroll);
+  }
+}
+
+window.addEventListener("scroll", showModalByScroll);
+
+// product quantity
+
+let decrement = document.querySelector(".decrement-btn");
+console.log(decrement);
+let increment = document.querySelector(".increment-btn");
+console.log(increment);
+let productCount = document.querySelector(".product-counter");
+console.log(productCount);
+let number = 1;
+
+increment.onclick = function () {
+  if (number < 5) {
+    number++;
+    productCount.value = number;
+  }
+};
+decrement.onclick = function () {
+  if (number > 1) {
+    number--;
+    productCount.value = number;
+  }
+};
