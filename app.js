@@ -77,23 +77,99 @@ window.addEventListener("scroll", showModalByScroll);
 
 // product quantity
 
-let decrement = document.querySelector(".decrement-btn");
-console.log(decrement);
-let increment = document.querySelector(".increment-btn");
-console.log(increment);
-let productCount = document.querySelector(".product-counter");
-console.log(productCount);
-let number = 1;
+// let decrement = document.querySelector(".decrement-btn");
+// console.log(decrement);
+// let increment = document.querySelector(".increment-btn");
+// console.log(increment);
+// let productCount = document.querySelector(".product-counter");
+// console.log(productCount);
+// let number = 1;
 
-increment.onclick = function () {
-  if (number < 5) {
-    number++;
-    productCount.value = number;
-  }
-};
-decrement.onclick = function () {
-  if (number > 1) {
-    number--;
-    productCount.value = number;
-  }
-};
+// increment.onclick = function () {
+//   if (number < 5) {
+//     number++;
+//     productCount.value = number;
+//   }
+// };
+// decrement.onclick = function () {
+//   if (number > 1) {
+//     number--;
+//     productCount.value = number;
+//   }
+// };
+
+let decrementBtns = document.querySelectorAll(".decrement-btn");
+let incrementsBtns = document.querySelectorAll(".increment-btn");
+let quantityInput = document.querySelectorAll(".product-quantity input");
+
+function Counter(incBtn, decBtn, inpValue, minCount = 1, maxCount = 5) {
+  this.domRefs = {
+    incBtn,
+    decBtn,
+    inpValue,
+  };
+  this.toggleButtonState = function () {
+    let count = this.domRefs.inpValue.value;
+    this.domRefs.decBtn.disabled = count <= minCount;
+    this.domRefs.incBtn.disabled = count >= maxCount;
+  };
+  this.toggleButtonState();
+
+  this.increment = function () {
+    this.domRefs.inpValue.value = +this.domRefs.inpValue.value + 1;
+    this.toggleButtonState();
+  };
+  this.decrement = function () {
+    this.domRefs.inpValue.value = +this.domRefs.inpValue.value - 1;
+    this.toggleButtonState();
+  };
+  this.domRefs.incBtn.addEventListener("click", this.increment.bind(this));
+  this.domRefs.decBtn.addEventListener("click", this.decrement.bind(this));
+
+  console.log(this);
+}
+let counter1 = new Counter(
+  incrementsBtns[0],
+  decrementBtns[0],
+  quantityInput[0]
+);
+let counter2 = new Counter(
+  incrementsBtns[1],
+  decrementBtns[1],
+  quantityInput[1]
+);
+let counter3 = new Counter(
+  incrementsBtns[2],
+  decrementBtns[2],
+  quantityInput[2]
+);
+let counter4 = new Counter(
+  incrementsBtns[3],
+  decrementBtns[3],
+  quantityInput[3]
+);
+let counter5 = new Counter(
+  incrementsBtns[4],
+  decrementBtns[4],
+  quantityInput[4]
+);
+let counter6 = new Counter(
+  incrementsBtns[5],
+  decrementBtns[5],
+  quantityInput[5]
+);
+let counter7 = new Counter(
+  incrementsBtns[6],
+  decrementBtns[6],
+  quantityInput[6]
+);
+let counter8 = new Counter(
+  incrementsBtns[7],
+  decrementBtns[7],
+  quantityInput[7]
+);
+let counter9 = new Counter(
+  incrementsBtns[8],
+  decrementBtns[8],
+  quantityInput[8]
+);
