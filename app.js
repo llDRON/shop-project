@@ -125,8 +125,6 @@ function Counter(incBtn, decBtn, inpValue, minCount = 1, maxCount = 5) {
   };
   this.domRefs.incBtn.addEventListener("click", this.increment.bind(this));
   this.domRefs.decBtn.addEventListener("click", this.decrement.bind(this));
-
-  console.log(this);
 }
 let counter1 = new Counter(
   incrementsBtns[0],
